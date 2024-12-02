@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffe082;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffe082;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffb300;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-top: 15px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    background-color: #555;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
+
+.cell.taken {
+    cursor: not-allowed;
+    background-color: #333;
+}
+
+#status {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+button:hover {
+    background-color: #ffca28;
+}
+
+button:active {
+    transform: scale(0.95);
+}
